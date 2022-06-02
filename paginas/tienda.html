@@ -20,38 +20,76 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Source+Sans+Pro:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.css.map">
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap.bundle.js.map"></script>
+    <script src="../js/bootstrap.js.map"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <main class="backgroundTienda">
         <!--Header de la pagina-->
         <section>  
             <header>
-                <img src="../imagenes/logo.svg" class="logo" >
-                <nav>
-                    <ul class="navDisplay">
-                        <li><a href = "../index.html">Home</a></li>
-                        <li><a href = "tienda.html" >Tienda</a></li>
-                        <li><a href = "referentes.html" >Referentes</a></li>
-                        <li><a href = "eventos.html" >Eventos</a></li>
-                        <li><a href = "sobreNosotros.html" >Sobre nosotros</a></li>
-                    </ul>
-                </nav>
+                <img src="../imagenes/logo.svg" class="logo">
+                <div class="menuResponsive">
+                    <label for="menu" class="iconoHam">
+                        <img src="../imagenes/hamburgermenu_120234.svg" alt="iconoHamburguesa">
+                    </label>
+                      <input type="checkbox" id="menu" class="navInput">
+                      <ul class="navDisplay">
+                          <li><a href = "../index.html">Home</a></li>
+                          <li><a href = "tienda.html" >Tienda</a></li>
+                          <li><a href = "referentes.html" >Referentes</a></li>
+                          <li><a href = "eventos.html" >Eventos</a></li>
+                          <li><a href = "sobreNosotros.html" >Sobre nosotros</a></li>
+                      </ul>
+                </div>
             </header>
         </section>
         <!--Fin del header-->
-            <!--Inicio de la tienda-->
-        <article class="promocionTienda">
-            <div class="imagenPromocion">
-                <img src="../imagenes/teahub.io-wallpaper-fender-2946275.jpg" alt="fenderApoyo">
-            </div>
-            <div class="promocionTiendaTexto">
-                <h2>CATALOGO FENDER</h2>
-                <p>Contamos con todo el apoyo de fender,
-                    si te interesa el catalogo haz click en el boton que saldra abajo
-                </p>
-                <a href="">Ver catalogo</a>
-            </div>
-        </article>
+        
+        
+        
+        <!--Inicio de la tienda-->
+        
+        
+        <div class="container-xxl">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="../imagenes/4939877.jpg" class="d-block w-100" alt="Stratocaster guitarra">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>SOMOS DISTRIBUIDORES FENDER</h5>
+                        <p>Contamos con el apoyo de Fender Musical Instruments Corporation</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../imagenes/6036967.jpg" class="d-block w-100" alt="Stratocaster guitarra">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>LOS EQUIPOS DE SONIDO MAS NUEVOS DEL MERCADO</h5>
+                        </div>                    
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../imagenes/6036987.jpg" class="d-block w-100" alt="Stratocaster guitarra">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+                </div>
+        </div>
         <section class="zonaDeCompra">
             <section class="filtrosCompra" >
                 <h3>Filtros</h3>
@@ -62,141 +100,162 @@
                 <a href="">Combos Blues</a>
                 <a href="">Varios</a>
             </section>
-            <section class="separadorGeneralTienda" >
-                <h4 class="centrar">Guitarras</h4>
-                <div class="articulosDeCompra" id="Guitarras">
-                    <div class="articulo">
-                        <img src="../tiendaCatalogo/StratocasterMarron.jpg" alt="UltraStratocaster" class="imagenesTienda">
-                        <h2>American Ultra Stratocaster</h2>
-                        <h3>599$</h3>
-                        <a href="">Comprar</a>
+            <section>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card">
+                        <img src="../tiendaCatalogo/Bajo jazz bass.jpg" class="card-img-top" alt="Stratocaster guitarra">
+                        <div class="card-body">
+                          <h5 class="card-title">Guitarra Stratocaster</h5>
+                          <p class="card-text">Play plus HSS</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
                     </div>
-                    <div class="articulo">
-                        <img src="../tiendaCatalogo/StratocasterCeleste.jpg" alt="Professional2StratocasterHSS" class="imagenesTienda">
-                        <h2>American Professional II Stratocaster HSS</h2>
-                        <h3>599$</h3>
-                        <a href="">Comprar</a>
+                    <div class="col">
+                      <div class="card">
+                        <img src="../tiendaCatalogo/Jv Modified Stratocaste.jpg" class="card-img-top" alt="Stratocaster guitarra">
+                        <div class="card-body">
+                          <h5 class="card-title">Guitarra Stratocaster</h5>
+                          <p class="card-text">Play plus HSS</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
                     </div>
-                    <div class="articulo">
-                        <img src="../tiendaCatalogo/StratocasterGris.jpg" alt="Professional2Stratocaster" class="imagenesTienda">
-                        <div>
-                            <h2>American Professional II Stratocaster</h2>
-                            <h3>599$</h3>
-                            <a href="">Comprar</a>    
+                    <div class="col">
+                      <div class="card">
+                        <img src="../tiendaCatalogo/Play plus hss.jpg" class="card-img-top" alt="Stratocaster guitarra">
+                        <div class="card-body">
+                          <h5 class="card-title">Guitarra Stratocaster</h5>
+                          <p class="card-text">Play plus HSS supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="../tiendaCatalogo/Play plus stratocaster.jpg" class="card-img-top" alt="Stratocaster guitarra">
+                        <div class="card-body">
+                          <h5 class="card-title">Guitarra Stratocaster</h5>
+                          <p class="card-text">Play plus HSS</p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                          <img src="../tiendaCatalogo/Play plus stratocaster.jpg" class="card-img-top" alt="Stratocaster guitarra">
+                          <div class="card-body">
+                            <h5 class="card-title">Guitarra Stratocaster</h5>
+                            <p class="card-text">Play plus HSS</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
                         </div>
                     </div>
-                    <div class="articulo">
-                        <img src="../tiendaCatalogo/StratocasterMarron.jpg" alt="UltraStratocaster" class="imagenesTienda">
-                        <h2>American Ultra Stratocaster</h2>
-                        <h3>599$</h3>
-                        <a href="">Comprar</a>
-                    </div>
-                    <div class="articulo">
-                        <img src="../tiendaCatalogo/StratocasterCeleste.jpg" alt="Professional2StratocasterHSS" class="imagenesTienda">
-                        <h2>American Professional II Stratocaster HSS</h2>
-                        <h3>599$</h3>
-                        <a href="">Comprar</a>
-                    </div>
-                    <div class="articulo">
-                        <img src="../tiendaCatalogo/StratocasterGris.jpg" alt="Professional2Stratocaster" class="imagenesTienda">
-                        <div>
-                            <h2>American Professional II Stratocaster</h2>
-                            <h3>599$</h3>
-                            <a href="">Comprar</a>    
+                    <div class="col">
+                        <div class="card">
+                          <img src="../tiendaCatalogo/Play plus stratocaster.jpg" class="card-img-top" alt="Stratocaster guitarra">
+                          <div class="card-body">
+                            <h5 class="card-title">Guitarra Stratocaster</h5>
+                            <p class="card-text">Play plus HSS</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
                         </div>
                     </div>
-                    <div class="articulo">
-                        <img src="../tiendaCatalogo/StratocasterMarron.jpg" alt="UltraStratocaster" class="imagenesTienda">
-                        <h2>American Ultra Stratocaster</h2>
-                        <h3>599$</h3>
-                        <a href="">Comprar</a>
-                    </div>
-                    <div class="articulo">
-                        <img src="../tiendaCatalogo/StratocasterCeleste.jpg" alt="Professional2StratocasterHSS" class="imagenesTienda">
-                        <h2>American Professional II Stratocaster HSS</h2>
-                        <h3>599$</h3>
-                        <a href="">Comprar</a>
-                    </div>
-                    <div class="articulo">
-                        <img src="../tiendaCatalogo/StratocasterGris.jpg" alt="Professional2Stratocaster" class="imagenesTienda">
-                        <div>
-                            <h2>American Professional II Stratocaster</h2>
-                            <h3>599$</h3>
-                            <a href="">Comprar</a>    
+                    <div class="col">
+                        <div class="card">
+                          <img src="../tiendaCatalogo/Play plus stratocaster.jpg" class="card-img-top" alt="Stratocaster guitarra">
+                          <div class="card-body">
+                            <h5 class="card-title">Guitarra Stratocaster</h5>
+                            <p class="card-text">Play plus HSS</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
                         </div>
                     </div>
-                </div>
-                <h4 class="centrar">Bajos</h4>
-                <div class="articulosDeCompra" id="Bajos">
-                    <div class="articulo">
-                        <img src="../tiendaCatalogo/Bajo jazz bass.jpg" alt="JazzBassProfessional" class="imagenesTienda">
-                        <div>
-                            <h2>American Jazz Bass Professional</h2>
-                            <h3>599$</h3>
-                            <a href="">Comprar</a>    
+                    <div class="col">
+                        <div class="card">
+                          <img src="../tiendaCatalogo/Play plus stratocaster.jpg" class="card-img-top" alt="Stratocaster guitarra">
+                          <div class="card-body">
+                            <h5 class="card-title">Guitarra Stratocaster</h5>
+                            <p class="card-text">Play plus HSS</p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
                         </div>
                     </div>
-                    <div class="articulo">
-                        <img src="../tiendaCatalogo/Bajo jazz bass.jpg" alt="JazzBassProfessional" class="imagenesTienda">
-                        <div>
-                            <h2>American Jazz Bass Professional</h2>
-                            <h3>599$</h3>
-                            <a href="Boton">Comprar</a>    
-                        </div>
-                    </div>
-                    <div class="articulo">
-                        <img src="../tiendaCatalogo/Bajo jazz bass.jpg" alt="JazzBassProfessional" class="imagenesTienda">
-                        <div>
-                            <h2>American Jazz Bass Professional</h2>
-                            <h3>599$</h3>
-                            <a href="">Comprar</a>    
-                        </div>
-                    </div>
-                    <div class="articulo">
-                        <img src="../tiendaCatalogo/Bajo jazz bass.jpg" alt="JazzBassProfessional" class="imagenesTienda">
-                        <div>
-                            <h2>American Jazz Bass Professional</h2>
-                            <h3>599$</h3>
-                            <a href="">Comprar</a>    
-                        </div>
-                    </div>
-                    <div class="articulo">
-                        <img src="../tiendaCatalogo/Bajo jazz bass.jpg" alt="JazzBassProfessional" class="imagenesTienda">
-                        <div>
-                            <h2>American Jazz Bass Professional</h2>
-                            <h3>599$</h3>
-                            <a href="">Comprar</a>    
-                        </div>
-                    </div>
-                    <div class="articulo">
-                        <img src="../tiendaCatalogo/Bajo jazz bass.jpg" alt="JazzBassProfessional" class="imagenesTienda">
-                        <div>
-                            <h2>American Jazz Bass Professional</h2>
-                            <h3>599$</h3>
-                            <a href="">Comprar</a>    
-                        </div>
-                    </div>
-                </div>
             </section>
         </section>
-        <div>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                      <!--<div class="articulo">
+                        <img src="../tiendaCatalogo/StratocasterCeleste.jpg" alt="Professional2StratocasterHSS" class="imagenesTienda">
+                        <h2>American Professional II Stratocaster HSS</h2>
+                        <h3>599$</h3>
+                        <a href="">Comprar</a>
+                    </div>
+                    <div class="articulo">
+                        <img src="../tiendaCatalogo/StratocasterGris.jpg" alt="Professional2Stratocaster" class="imagenesTienda">
+                        <div>
+                            <h2>American Professional II Stratocaster</h2>
+                            <h3>599$</h3>
+                            <a href="">Comprar</a>    
+                        </div>
+                    </div>
+                    <div class="articulo">
+                        <img src="../tiendaCatalogo/StratocasterMarron.jpg" alt="UltraStratocaster" class="imagenesTienda">
+                        <h2>American Ultra Stratocaster</h2>
+                        <h3>599$</h3>
+                        <a href="">Comprar</a>
+                    </div>
+                    <div class="articulo">
+                        <img src="../tiendaCatalogo/StratocasterCeleste.jpg" alt="Professional2StratocasterHSS" class="imagenesTienda">
+                        <h2>American Professional II Stratocaster HSS</h2>
+                        <h3>599$</h3>
+                        <a href="">Comprar</a>
+                    </div>
+                    <div class="articulo">
+                        <img src="../tiendaCatalogo/StratocasterGris.jpg" alt="Professional2Stratocaster" class="imagenesTienda">
+                        <div>
+                            <h2>American Professional II Stratocaster</h2>
+                            <h3>599$</h3>
+                            <a href="">Comprar</a>    
+                        </div>
+                    </div>
+                    <div class="articulo">
+                        <img src="../tiendaCatalogo/StratocasterMarron.jpg" alt="UltraStratocaster" class="imagenesTienda">
+                        <h2>American Ultra Stratocaster</h2>
+                        <h3>599$</h3>
+                        <a href="">Comprar</a>
+                    </div>
+                    <div class="articulo">
+                        <img src="../tiendaCatalogo/StratocasterCeleste.jpg" alt="Professional2StratocasterHSS" class="imagenesTienda">
+                        <h2>American Professional II Stratocaster HSS</h2>
+                        <h3>599$</h3>
+                        <a href="">Comprar</a>
+                    </div>-->
+        <div class="formularioCompra">
             <h4 class="centrar">¿Tenes problemas con la compra?</h4>
             <form action="index.js" Method="POST" class="problemasCompra">
                 <p>Comunicate con nosotros</p>
                 <div>
-                    <label for="NombreApellido">Nombre y apellido</label>
-                    <input type="text" name="NombreApellido"/>
+                    <label for="NombreApellido"></label>
+                    <input type="text" name="NombreApellido"  placeholder="Nombre y apellido">
+                </div>
+                <div> 
+                    <label for="Email"></label>
+                    <input type="email" name="Email" id="Email"  placeholder="Email"/>
                 </div>
                 <div>
-                    <label for="Email">Mail</label>
-                    <input type="email" name="Email" id="Email"/>
+                    <label for="Motivo"></label>
+                    <input type="text" placeholder="¿Que problema ocurrio?" class="motivo">
                 </div>
                 <div>
-                    <label for="Motivo">¿Que problema ocurrio?</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <button type="send">Enviar
+                    <button type="send" class="btn btn-primary">Enviar
                 </div>
             </form>
         </div>    

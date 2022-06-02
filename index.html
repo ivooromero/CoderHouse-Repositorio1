@@ -13,6 +13,10 @@
     <link href='https://css.gg/facebook.css' rel='stylesheet'>
     <link href='https://css.gg/smartphone.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.css">
 </head>
 <body>
   <main class="gridPadre">
@@ -41,8 +45,9 @@
       <div class="videoDia">
           <h2 class="centrar">Video del dia</h2>
       </div>
+      
       <div class="video">
-          <video src="./imagenes/Videos/y2mate.com - BB King  John Mayer Live  Part 1_720p.mp4" controls width="1000"></video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9VxYAAe6CdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
       </div>
       <div class="formularioVideo">
           <p>¿Que te ha parecido el video?</p>
@@ -53,7 +58,6 @@
           </form>
       </div>
     </section>
-    
     <footer class="footer">
       <div class="colorfooter">
         <h4>Newsletter</h4>
@@ -85,5 +89,8 @@
       </div>
     </footer>
   </main>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
