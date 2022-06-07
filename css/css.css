@@ -11,7 +11,7 @@ body{
 .gridPadre{
     display: grid;
     grid-template:
-    "header header" 650px
+    "header header" 1000px
     "section section" auto
     "footer footer" auto;
 }
@@ -43,7 +43,7 @@ body{
     background-position: center;
     background-attachment: fixed;
     background-size: 1200px;
-    height: 650px;
+    height: 1000px;
     padding-top: 1px;
 }
 .section{
@@ -113,12 +113,36 @@ body{
     justify-content: center;
     align-items: center;
 }
+.centrar , h2{
+    font-family: Helvetica;
+    color:#fbf3a1;
+    font-size: larger;
+    font-weight:bolder;
+}
 .section{
     background-image:url(../imagenes/anthony-torres-WAG2DyiFhnQ-unsplash.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: 900px;
 }
+.noticiasIndex{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    position: relative;
+    top: 509px;
+}
+.noticiasIndex .bg-image{
+    width: 500px;
+    height: 250px;
+    background-size:100%;
+}
+.noticiasIndex .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
 .formularioVideo{
     width: auto;
     height:auto;
@@ -298,7 +322,7 @@ footer h4{
 }
 .filtrosCompra{
     background-color: #091926ad;
-    width: 600px;
+    width: 2000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -308,7 +332,17 @@ footer h4{
     margin-top: 18px;
     position: sticky;
     top: 20px;
-    }
+}
+.filtrosCompra .col-md-8{
+    width: 200px;
+}
+.filtrosCompra .btn-primary{
+    width: 176px;
+    background-color: black;
+    border:2px solid gray;
+    color: #fbf3a1;
+
+}
 .filtrosCompra a{
     color: #fbf3a1;
     text-decoration: none;
@@ -687,4 +721,65 @@ footer h4{
         background-color:#fbf3a1 ;
         color: black;
     }
+<<<<<<< Updated upstream
+=======
+     .menuResponsive .iconoHam{
+        margin: 0px 0px 0px 0px;
+    }
+    .filtrosCompra{
+        background-color: #091926ad;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly;
+        border: 5px solid grey;
+        max-height: 250px;
+        margin-top: 18px;
+        position: sticky;
+        top: 20px;
+        max-width: 100px;
+    }
+    .filtrosCompra a{
+        width: 87px;
+        font-size: xx-small;
+    }
+    .filtrosCompra .col-md-8{
+        width: 100px;
+        font-size: xx-small;
+    }
+    .filtrosCompra .btn-primary{
+        width: 70px;
+        background-color: black;
+        border:2px solid gray;
+        color: #fbf3a1;
+        font-size: xx-small;
+    }
+    .noticiasIndex{
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-between;
+        position: relative;
+        top: 362px;
+    }
+    .noticiasIndex .bg-image{
+        width: auto;
+        height: auto;
+        background-size:100%;
+    }
+    .noticiasIndex .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .video iframe{
+        width: auto;
+    }
+    section .col{
+        width: auto;
+        height: auto;
+        font-size: xx-small;
+    }
+
+>>>>>>> Stashed changes
 }   
