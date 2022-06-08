@@ -57,6 +57,7 @@ body{
     top: 25px;
 }
 .iconoHam{
+    margin: none;
     display: none;
 }
 .navInput{
@@ -104,27 +105,25 @@ body{
 }
 .logo2 img{
     width: 450px;
+    animation-duration: 1s;
+    /* double of original time */
+    animation-name: logo2;
+    animation-iteration-count: 1;
 }
-.video{
-    padding-top: 50px;
-    height: auto;
-    width: auto;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-.centrar , h2{
-    font-family: Helvetica;
-    color:#fbf3a1;
-    font-size: larger;
-    font-weight:bolder;
-}
-.section{
-    background-image:url(../imagenes/anthony-torres-WAG2DyiFhnQ-unsplash.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: 900px;
-}
+@keyframes logo2 {
+    0%   {left:50px; top:10px;-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";}
+    100% {left:250px; top:10px;-moz-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        filter: FlipH;
+        -ms-filter: "FlipH";}
+  }
 .noticiasIndex{
     display: flex;
     justify-content: space-evenly;
@@ -142,22 +141,43 @@ body{
     flex-direction: column;
     justify-content: end;
 }
-
+.video{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.section{
+    background-image:url(../imagenes/anthony-torres-WAG2DyiFhnQ-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 900px;
+}
 .formularioVideo{
-    width: auto;
-    height:auto;
-    margin:auto;
+    width: 180px;
+    height:140px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    margin: auto;
     text-align: center;
     background-color: #091926b7;
-    color:#FBF4A1
+    color:#FBF4A1;
+    animation: form 1s infinite
+}
+@keyframes form {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.01,1.01);
+    }
+    100% {
+        transform: scale(1,1);
+    }
 }
 .videoDia{
     background-color:#091825;
     text-align: center;
 }
-
-
-
 /*SECCION DEL FOOTER*/
 .colorfooter{
     color:#FBF4A1;
@@ -246,16 +266,20 @@ footer h4{
 .imagenPromocion{
     overflow: hidden;
 }
-.promocionTiendaTexto{
-    position: absolute;
-    top: 320.5px;
-    text-align: center;
-    font-family: 'Libre Bodoni', serif;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: white;
-    backdrop-filter: blur(2px);
+.d-md-block{
+    position: relative;
+    top: 430px;
+    color: black;
 }
-.promocionTiendaTexto h2{
+.d-md-block p{
+    color: white;
+    font-weight: bolder;
+}
+.d-md-block h5{
+    color: white;
+    font-weight: bolder;
+}
+/*.promocionTiendaTexto h2{
     font-family: 'Source Sans Pro';
     font-size: xx-large;
     color: white;
@@ -273,7 +297,7 @@ footer h4{
 }
 .promocionTiendaTexto a:hover{
     border-color: grey;
-}
+}*/
 .padreTienda{
     display:flex;
     flex-wrap:wrap;
@@ -285,6 +309,9 @@ footer h4{
     height: auto;
     text-align: center;
     background-color: #091926ad;
+}
+div .card{
+    background-color: rgba(251, 243, 161, 0.41);
 }
 .problemasCompra{
     height: auto;
@@ -300,16 +327,16 @@ footer h4{
 .zonaDeCompra{
     display:flex;
 }
-.separadorGeneralTienda{
-    display: flex;
-    flex-direction: column;
-}
+
 .articulosDeCompra{
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+}
+div .card{
+    text-align: center;
 }
 .articulo{
     width: 350px;
@@ -322,7 +349,7 @@ footer h4{
 }
 .filtrosCompra{
     background-color: #091926ad;
-    width: 2000px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -332,17 +359,7 @@ footer h4{
     margin-top: 18px;
     position: sticky;
     top: 20px;
-}
-.filtrosCompra .col-md-8{
-    width: 200px;
-}
-.filtrosCompra .btn-primary{
-    width: 176px;
-    background-color: black;
-    border:2px solid gray;
-    color: #fbf3a1;
-
-}
+    }
 .filtrosCompra a{
     color: #fbf3a1;
     text-decoration: none;
@@ -380,7 +397,25 @@ footer h4{
 	position:relative;
 	top:1px;
 }
-
+.formularioCompra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.formularioCompra h4{
+    color: black;
+}
+.motivo{
+    height: 150px;
+    width: auto;
+    text-align: center;
+    background-color: black;
+    margin-bottom: 2px;
+    border: 0px;
+    color: white;
+}
 /*FIN DE LA TIENDA*/
 
 /*SECCION REFERENTES*/
@@ -545,8 +580,8 @@ footer h4{
         text-align: center;
         margin-right: 0px;
         margin-top: 50px;
-        border: 1px solid black;
-        background-color: black;
+        border: 1px solid rgba(255, 255, 255, 0);
+        background-color: rgba(0, 0, 0, 0);
     }
     .navDisplay li a{
         justify-self: center;
@@ -721,10 +756,9 @@ footer h4{
         background-color:#fbf3a1 ;
         color: black;
     }
-<<<<<<< Updated upstream
-=======
      .menuResponsive .iconoHam{
-        margin: 0px 0px 0px 0px;
+        margin: 0px 5px 5px 0px;
+
     }
     .filtrosCompra{
         background-color: #091926ad;
@@ -780,6 +814,4 @@ footer h4{
         height: auto;
         font-size: xx-small;
     }
-
->>>>>>> Stashed changes
-}   
+}
