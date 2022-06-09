@@ -1,0 +1,191 @@
+@keyframes form {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(1.01, 1.01); }
+  100% {
+    transform: scale(1, 1); } }
+
+@keyframes logo2 {
+  0% {
+    left: 50px;
+    top: 10px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH"; }
+  100% {
+    left: 250px;
+    top: 10px;
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    filter: FlipH;
+    -ms-filter: "FlipH"; } }
+
+.gridPadre {
+  display: grid;
+  grid-template: "header header" 1000px "section section" auto "footer footer" auto; }
+  .gridPadre .section {
+    grid-area: section; }
+  .gridPadre .footer {
+    grid-area: footer; }
+  .gridPadre .header {
+    grid-area: header;
+    background-color: #091926; }
+    .gridPadre .header .background1 {
+      background-image: url("../imagenes/jazz-1658886.jpg");
+      background-position: center;
+      background-attachment: fixed;
+      background-size: 1200px;
+      height: 1000px;
+      padding-top: 1px; }
+
+.logo2 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 225px; }
+  .logo2 img {
+    width: 450px;
+    animation-duration: 1s;
+    animation-name: logo2;
+    animation-iteration-count: 1; }
+
+.noticiasIndex {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-between;
+  position: relative;
+  top: 509px; }
+  .noticiasIndex .bg-image {
+    width: 500px;
+    height: 250px;
+    background-size: 100%; }
+  .noticiasIndex .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: end; }
+
+.section {
+  background-image: url(../imagenes/anthony-torres-WAG2DyiFhnQ-unsplash.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 900px; }
+  .section .videoDia {
+    background-color: #091825;
+    text-align: center; }
+  .section .video {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .section .formularioVideo {
+    width: 180px;
+    height: 140px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin: auto;
+    text-align: center;
+    background-color: #091926b7;
+    color: #FBF4A1;
+    animation: form 1s infinite; }
+
+/*SECCION DEL FOOTER*/
+.footer {
+  background: linear-gradient(45deg, black 0%, #091825 50%, #00d4ff 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .footer .colorfooter {
+    color: #FBF4A1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+    width: 400px;
+    text-align: center;
+    padding-left: 5px; }
+    .footer .colorfooter h4 {
+      font-family: 'Libre Bodoni';
+      font-size: x-large;
+      text-shadow: 3px 3px 3px black; }
+    .footer .colorfooter form {
+      display: flex;
+      align-content: center; }
+      .footer .colorfooter form input {
+        width: 450px;
+        height: 35px;
+        background-color: black;
+        border: 0;
+        text-align: center; }
+      .footer .colorfooter form button {
+        background-color: #fbf3a1;
+        border: 0;
+        color: black; }
+  .footer .patrocinadores {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #FBF4A1;
+    justify-content: space-around; }
+    .footer .patrocinadores div {
+      display: flex;
+      flex-direction: row; }
+      .footer .patrocinadores div img {
+        height: 50px;
+        width: 100px; }
+  .footer .footerRedesContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FBF4A1;
+    width: 180px; }
+    .footer .footerRedesContacto h4 div {
+      text-decoration: none;
+      color: black; }
+
+/*FIN DEL FOOTER*/
+.logo {
+  position: absolute;
+  top: 25px; }
+
+.menuResponsive .iconoHam {
+  margin: none;
+  display: none; }
+
+.menuResponsive .navInput {
+  display: none; }
+
+.menuResponsive .navDisplay {
+  display: grid;
+  grid-template-columns: auto auto auto auto 150px;
+  grid-template-rows: 100px;
+  justify-content: end;
+  align-items: center; }
+  .menuResponsive .navDisplay li {
+    list-style: none; }
+    .menuResponsive .navDisplay li:active {
+      padding-top: 1px; }
+    .menuResponsive .navDisplay li a {
+      box-shadow: inset 0px 0 0 0 #091825;
+      color: #091825;
+      margin: 0 -.25rem;
+      padding: 0 .25rem;
+      transition: color 1s, box-shadow 1s;
+      padding-left: 5px;
+      padding-top: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+      border: 2px solid rgba(0, 0, 0, 0);
+      border-radius: 8px;
+      margin-right: 15px;
+      background-color: #FBF4A1;
+      color: black;
+      text-decoration: none; }
+      .menuResponsive .navDisplay li a:hover {
+        box-shadow: inset 150px 0 0 0 #091825;
+        color: white; }
