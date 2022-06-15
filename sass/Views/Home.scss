@@ -1,28 +1,3 @@
-@keyframes form {
-    0% {
-        transform: scale(1,1);
-    }
-    50% {
-        transform: scale(1.01,1.01);
-    }
-    100% {
-        transform: scale(1,1);
-    }
-}
-@keyframes logo2 {
-    0%   {left:50px; top:10px;-moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";}
-    100% {left:250px; top:10px;-moz-transform: scaleX(1);
-        -o-transform: scaleX(1);
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
-        filter: FlipH;
-        -ms-filter: "FlipH";}
-}
 .gridPadre{
     display: grid;
     grid-template:
@@ -37,7 +12,7 @@
         }
         .header{
             grid-area: header;
-            background-color: #091926;
+            background-color: $color-secundario;
 
                 .background1{
                     background-image: url("../imagenes/jazz-1658886.jpg");
@@ -86,7 +61,7 @@
     background-attachment: fixed;
     background-size: 900px;
     .videoDia{
-        background-color:#091825;
+        background-color: $color-secundario;
         text-align: center;
     }
     .video{
@@ -101,8 +76,11 @@
         margin-bottom: 5px;
         margin: auto;
         text-align: center;
-        background-color: #091926b7;
-        color:#FBF4A1;
-        animation: form 1s infinite
+        background-color: $color-secundario;
+        color: $color-principal;
+        animation: form 1s infinite;
+        p{
+            color: white;
+        }
     }
 }

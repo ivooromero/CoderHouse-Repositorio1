@@ -4,7 +4,7 @@
     flex-direction: row;
     justify-content: space-between;
         .colorfooter{
-            color:#FBF4A1;
+            color: $color-principal;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -30,7 +30,7 @@
                     text-align: center;
                 }
                 button{
-                    background-color:#fbf3a1;
+                    background-color: $color-principal;
                     border: 0;
                     color: black;
                 }
@@ -40,7 +40,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-            color:#FBF4A1;
+            color: $color-principal;
             justify-content: space-around;
             
                 div{
@@ -57,7 +57,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            color: #FBF4A1;
+            color: $color-principal;
             width: 180px;
             h4 {
                 div{
@@ -67,4 +67,5 @@
         }
     }
 }
+
 /*FIN DEL FOOTER*/

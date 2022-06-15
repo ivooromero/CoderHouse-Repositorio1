@@ -1,0 +1,25 @@
+@keyframes form {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.01,1.01);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+@keyframes logo2 {
+    0%   {left:50px; top:10px;-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";}
+    100% {left:250px; top:10px;-moz-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        filter: FlipH;
+        -ms-filter: "FlipH";}
+  }
