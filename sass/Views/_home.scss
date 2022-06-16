@@ -50,8 +50,7 @@
         background-size:100%;
     }
     .card-body{
-        display: flex;
-        flex-direction: column;
+        @include flexco;
         justify-content: end;
     }
 }
@@ -66,8 +65,7 @@
     }
     .video{
         display:flex;
-        justify-content: center;
-        align-items: center;
+        @include content-center;
     }
     .formularioVideo{
         width: 180px;

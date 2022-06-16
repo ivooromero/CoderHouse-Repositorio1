@@ -249,15 +249,7 @@ footer h4{
 .backgroundTienda{
     background-image: url(../tiendaCatalogo/willian-west-cVHCZTP8ldc-unsplash\ \(1\).jpg);
 }
-.promocionTienda{
-    display:flex;
-    flex-direction: row;
-    background-color: #000000;
-    justify-content: center;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-    height: 500px;
-}
+
 .promocionTienda div img{
     width: 1350px;
     position: relative;
@@ -338,15 +330,7 @@ div .card{
 div .card{
     text-align: center;
 }
-.articulo{
-    width: 350px;
-    height: 180px;
-    border: 4px solid white;
-    background-color: #fbf3a169;
-    border-style: ridge;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: smaller;
-}
+
 .filtrosCompra{
     background-color: #091926ad;
     width: 600px;
@@ -376,27 +360,7 @@ div .card{
 .filtrosCompra h3{
     color: white;
 }
-.articulo a{
-    background-color:#000000;
-	border-radius:5px;
-	border:2px solid grey;
-	display:inline-block;
-	cursor:pointer;
-	color:#fbf4a1;
-	font-family:Arial;
-	font-size:10px;
-	padding:8px 14px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #000000;
-    transition: 0.5s;
-}
-.articulo a:hover {
-	background-color:#091926;
-}
-.articulo a:active {
-	position:relative;
-	top:1px;
-}
+
 .formularioCompra{
     display: flex;
     flex-direction: column;

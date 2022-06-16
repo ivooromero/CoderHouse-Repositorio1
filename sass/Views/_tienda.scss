@@ -1,0 +1,81 @@
+.backgroundTienda{
+    background-image: url(https://images.unsplash.com/photo-1516315973067-166cf84425bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)
+}
+.d-md-block{
+    position: relative;
+    top: 430px;
+    color: black;
+        h5{
+        color: white;
+        font-weight: bolder;
+    }
+        p{
+        color: white;
+        font-weight: bolder;
+        }
+}
+.imagenesTienda{
+    width: 200px;
+    height: auto;
+}
+.zonaDeCompra{
+    display:flex;
+    .filtrosCompra{
+        background-color: #091926ad;
+        width: 600px;
+        @include flexco;
+        align-items: center;
+        justify-content:space-evenly;
+        border: 5px solid grey;
+        max-height: 500px;
+        margin-top: 18px;
+        position: sticky;
+        top: 20px;
+            .filtrosCompra h3{
+                color: white;
+            }
+            a{
+            color: $color-principal;
+            text-decoration: none;
+            border: $borde-reutilizado;
+            border-radius:10px;
+            width: 150px;
+            text-align: map-get($map: $estilos, $key: centro);
+            background-color: black;
+            transition: 0.5s;
+                &:hover{
+                    border-radius: 0px;
+                }
+            }
+    }
+}
+div {
+    .card{
+        text-align: center;
+        background-color: rgba(251, 243, 161, 0.41);
+        }
+}
+.formularioCompra{
+    @include flexco;
+    @include content-center;
+    text-align: map-get($map: $estilos, $key: centro);
+        .problemasCompra{
+            text-align:map-get($map: $estilos, $key: centro);
+            background-color: #091926ad;
+            color:#F2E4D8;
+            @include hw-auto;
+        }
+        .motivo{
+            height: 150px;
+            width: auto;
+            text-align: map-get($map: $estilos, $key: centro);
+            background-color: black;
+            margin-bottom: 2px;
+            border: 0px;
+            color: white;
+            }
+        h4{
+        color: black;
+            }
+}
+/*FIN DE LA TIENDA*/

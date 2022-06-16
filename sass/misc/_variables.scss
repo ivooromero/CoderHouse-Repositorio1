@@ -2,3 +2,24 @@ $color-principal: #FBF4A1;
 $color-secundario: #091825;
 $borde-reutilizado: 2px solid rgba(0, 0, 0, 0);
 $fuente-main:'Libre Bodoni';
+$estilos:(
+    centro: center,
+    nulo:none,
+    principal:#091825,
+    );
+@mixin flexco {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexro {
+    display: flex;
+    flex-direction: row;   
+}
+@mixin content-center {
+    align-content: center;
+    justify-content: center;
+}
+@mixin hw-auto {
+    height: auto;
+    width: auto;
+}
