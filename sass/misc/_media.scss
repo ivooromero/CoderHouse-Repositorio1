@@ -1,75 +1,68 @@
 @media only screen and (max-width: 571px) {
-    main{
-        .gridPadre{
+    .gridPadre{
         display: grid;
         grid-template:
         "header header" 571px
         "section section" auto
         "footer footer" auto;
-        .header{
-            grid-area: header;
-            backdrop-filter: blur(1px);
-            .background1{
-                background-position: center;
-                background-attachment: fixed;
-                background-size: 1200px;
-                height: 570px;
-                padding-top: 1px;
-                div{
-                    .menuResponsive {
-                        label{
-                        display: flex;
-                        justify-content: end;
-                        margin-top: 40px;
-                        margin-right: 15px;
-                        .navInput{
-                            position: sticky;
-                            top:40px;
-                            left:300px;
-                            display: none;
-                            &:checked + .navDisplay{
-                                display: grid;
-                                grid-template-columns: auto;
-                                grid-template-rows: auto auto auto auto auto;
-                                text-align: center;
-                                margin-right: 0px;
-                                margin-top: 50px;
-                                border: 1px solid rgba(255, 255, 255, 0);
-                                background-color: rgba(0, 0, 0, 0);
-                            }
-                        }
-                    }
-                }
-            }
-                 ul .navDisplay{
-                    display: none;
-                    justify-content: center;
-                    align-content: center;
-                    background-color: #091926ad;
-                    li{
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-                        margin-right: 0px;
-                        padding-left: 5px;
-                        a{
-                            justify-self: center;
-                            margin-right: 0px;
-                        }
-                    }
-                }
-            }
-        }
-            .logo2{
-                display: flex;
-                justify-content: center;
-                position:relative;
-                top: 225px;
-                img{
-                    width: auto;
-                }
-        }
-        }
-}
+    }
+    .navDisplay li{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: 0px;
+        padding-left: 5px;
+    }
+    .navDisplay{
+        display: none;
+        justify-content: center;
+        align-content: center;
+        background-color: #091926ad;
+    }
+    .navInput{
+        position: sticky;
+        top:40px;
+        left:300px;
+        display: none;
+    }
+    .navInput:checked + .navDisplay{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        text-align: center;
+        margin-right: 0px;
+        margin-top: 50px;
+        border: 1px solid rgba(255, 255, 255, 0);
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .navDisplay li a{
+        justify-self: center;
+        margin-right: 0px;
+    }
+    .menuResponsive label{
+        display: flex;
+        justify-content: end;
+        margin-top: 40px;
+        margin-right: 15px;
+    }
+    .header{
+        grid-area: header;
+        backdrop-filter: blur(1px);
+    }
+    .background1{
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 1200px;
+        height: 570px;
+        padding-top: 1px;
+    }
+    .logo2{
+        display: flex;
+        justify-content: center;
+        position:relative;
+        top: 225px;
+    }
+    .logo2 img{
+        width: auto;
     }
     .video{
         padding-top: 50px;
@@ -78,11 +71,11 @@
         display:flex;
         justify-content: center;
         align-items: center;
-            video{
-            height: auto;
-            width: 300px;
-            margin-bottom: 25px;
-        }
+    }
+    .video video{
+        height: auto;
+        width: 300px;
+        margin-bottom: 25px;
     }
     .formularioVideo{
         width: 200px;
@@ -272,3 +265,4 @@
         height: auto;
         font-size: xx-small;
     }
+}
