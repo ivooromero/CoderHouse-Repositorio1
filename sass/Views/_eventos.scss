@@ -1,5 +1,65 @@
 /*SECCION EVENTOS*/
-.eventoPrincipal{
-    background-color: aqua;
-}
+    .eventoPrincipal{
+        display: flex;
+        background-color: black;
+        .imagenEventoP{
+            img{
+                max-width: 700px;
+            }
+        }
+        .infoEventoP{
+            align-self: center;
+            justify-self: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            color: white;
+            padding-bottom: 100px;
+            h1{
+                font-size: 60px;
+                font-family: $fuente-sec;
+                font-weight:bolder;
+            }
+            h2{
+                font-family: $fuente-sec;
+            }
+            a{
+                font-family: $fuente-main;
+            }
+        }
+
+    }
+    .eventosSeparador{
+        display: flex;
+        flex-direction: column;
+        span{
+            max-width: auto;
+            max-height: 30px;
+            background-color: $color-secundario;
+            overflow:visible;
+            img{
+                width: 650px;
+                position: relative;
+                bottom: 460px;
+                left: 700px;
+            }
+        }
+    }
+    .todosLosEventos{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 5px;
+        background-color: $color-secundario;
+        .caja{
+            justify-self: center;
+            align-self: center;
+            img{
+                max-width: 400px;
+
+            }
+        }
+    }
+
+
 /*FIN DE EVENTOS*/

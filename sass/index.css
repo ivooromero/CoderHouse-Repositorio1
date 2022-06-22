@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&family=Open+Sans:wght@300&display=swap");
 @-webkit-keyframes form {
   0% {
     transform: scale(1, 1);
@@ -422,7 +424,63 @@ div .card {
 
 /*SECCION EVENTOS*/
 .eventoPrincipal {
-  background-color: aqua;
+  display: flex;
+  background-color: black;
+}
+.eventoPrincipal .imagenEventoP img {
+  max-width: 700px;
+}
+.eventoPrincipal .infoEventoP {
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding-bottom: 100px;
+}
+.eventoPrincipal .infoEventoP h1 {
+  font-size: 60px;
+  font-family: "Nunito";
+  font-weight: bolder;
+}
+.eventoPrincipal .infoEventoP h2 {
+  font-family: "Nunito";
+}
+.eventoPrincipal .infoEventoP a {
+  font-family: "Libre Bodoni";
+}
+
+.eventosSeparador {
+  display: flex;
+  flex-direction: column;
+}
+.eventosSeparador span {
+  max-width: auto;
+  max-height: 30px;
+  background-color: #091825;
+  overflow: visible;
+}
+.eventosSeparador span img {
+  width: 650px;
+  position: relative;
+  bottom: 460px;
+  left: 700px;
+}
+
+.todosLosEventos {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 5px;
+  background-color: #091825;
+}
+.todosLosEventos .caja {
+  justify-self: center;
+  align-self: center;
+}
+.todosLosEventos .caja img {
+  max-width: 400px;
 }
 
 /*FIN DE EVENTOS*/
