@@ -102,7 +102,6 @@
 
 .menuResponsive .navInput {
   display: none; }
-
 .menuResponsive .navDisplay {
   display: grid;
   grid-template-columns: auto auto auto auto 150px;
@@ -110,7 +109,8 @@
   justify-content: end;
   align-items: center; }
   .menuResponsive .navDisplay li {
-    list-style: none; }
+    list-style: none;  
+  }
     .menuResponsive .navDisplay li:active {
       padding-top: 1px; }
     .menuResponsive .navDisplay li a {
@@ -340,29 +340,38 @@ div .card {
     "section section" auto
    "footer footer" auto; }
   .navDisplay li {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-right: 0px;
-    padding-left: 5px; }
-  .navDisplay {
     display: none;
+  }
+  .navDisplay {
     justify-content: center;
-    align-content: center;
-    background-color: #091926ad; }
+    align-content: center; 
+  }
+  .menuResponsive .iconoHam{
+    display:flex;
+  }
   .navInput {
-    position: sticky;
-    top: 40px;
-    left: 300px;
-    display: none; }
-  .navInput:checked + .navDisplay {
+    display: flex;
+    width: 500px;
+    color: white;
+ }
+  .navInput:checked + .navDisplay li {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+    height: auto;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0); }
+  .menuResponsive .navDisplay{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto;
-    text-align: center;
-    margin-right: 0px;
-    margin-top: 50px;
-    border: 1px solid rgba(255, 255, 255, 0);
-    background-color: rgba(0, 0, 0, 0); }
+    grid-template-rows: 50px;
+    justify-content: center;
+    align-content: center;    
+  }
+  }
   .navDisplay li a {
     justify-self: center;
     margin-right: 0px; }
@@ -371,13 +380,13 @@ div .card {
     justify-content: end;
     margin-top: 40px;
     margin-right: 15px; }
-  .header {
+  .gridPadre .header {
     grid-area: header;
     backdrop-filter: blur(1px); }
-  .background1 {
+  .gridPadre .header .background1 {
     background-position: center;
     background-attachment: fixed;
-    background-size: 1200px;
+    background-size: 900px;
     height: 570px;
     padding-top: 1px; }
   .logo2 {
@@ -387,75 +396,64 @@ div .card {
     top: 225px; }
   .logo2 img {
     width: auto; }
+  .gridPadre .header .noticiasIndex{
+    top: 291px;
+  }
   .video {
     padding-top: 50px;
     height: auto;
     width: auto;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center; 
+  }
   .video video {
     height: auto;
     width: 300px;
     margin-bottom: 25px; }
-  .formularioVideo {
-    width: 200px; }
-  .colorfooter {
+    .section .formularioVideo {
+    height: 130px; 
+    margin-bottom:1px ;}
+  .footer{
     color: #FBF4A1;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100px;
-    width: 320px;
-    text-align: center;
-    padding-left: 5px; }
-  .colorfooter form {
-    display: flex; }
-  .colorfooter form input {
-    width: 275px;
-    height: 40px;
-    background-color: black;
-    border: 0;
-    text-align: center; }
-  .colorfooter form button {
-    background-color: #fbf3a1;
-    border: 0;
-    color: black; }
-  footer {
-    background: linear-gradient(45deg, black 0%, #091825 50%, #00d4ff 100%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; }
-  footer h4 {
-    font-family: 'Libre Bodoni';
-    font-size: x-large;
-    text-shadow: 3px 3px 3px black; }
-  .footerRedesContacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #FBF4A1;
+    height: 500px;
     width: auto;
-    margin-bottom: 5px; }
-  .footerRedesContacto h4 div {
-    text-decoration: none;
-    color: black; }
-  .patrocinadores {
+    text-align: center; 
+  }
+  .footer .colorfooter{
+    justify-self: center;
+    align-self: center;
+    width: auto;
+  }
+  .footer .colorfooter form {
+    justify-self: center;
+    align-self: center;
+    width: 308px;
+  }
+  .footer .patrocinadores div{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    color: #FBF4A1;
-    justify-content: space-around; }
-  .patrocinadores div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-  .patrocinadores div img {
-    height: 50px;
-    width: 50px; }
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .footerRedesContacto{
+    justify-self: center;
+    align-self: center;
+  }
+  /*TIENDA*/
+  .zonaDeCompra .filtrosCompra a{
+    width: 88px;
+    border: 1px solid #FBF4A1;
+  }
+  /*FIN TIENDA*/
   /*REFERENTES*/
+
+
+
+
   .referentesOrigenes {
     display: flex;
     flex-direction: column;
@@ -470,13 +468,12 @@ div .card {
   .referentesOrigenes p {
     color: black;
     font-size: x-small; }
-  .gridPadreReferentes {
+  /*.gridPadreReferentes {
     display: grid;
-    grid-template: "header header" 113px
- "articleR articleR" auto
+    grid-template: "header header" 500px
  "sectionR sectionR" auto
  "footer footer" auto; }
-  .sectionR h2 {
+  */.sectionR h2 {
     text-align: center; }
   .musicosReferentes {
     display: flex;
@@ -550,4 +547,11 @@ div .card {
   section .col {
     width: auto;
     height: auto;
-    font-size: xx-small; } }
+    font-size: xx-small; } 
+    /*EVENTOS*/
+
+  .calendario{
+    display: none;
+    flex-direction: column;
+  }
+
