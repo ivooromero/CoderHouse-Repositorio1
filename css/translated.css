@@ -102,6 +102,7 @@
 
 .menuResponsive .navInput {
   display: none; }
+
 .menuResponsive .navDisplay {
   display: grid;
   grid-template-columns: auto auto auto auto 150px;
@@ -109,8 +110,7 @@
   justify-content: end;
   align-items: center; }
   .menuResponsive .navDisplay li {
-    list-style: none;  
-  }
+    list-style: none; }
     .menuResponsive .navDisplay li:active {
       padding-top: 1px; }
     .menuResponsive .navDisplay li a {
@@ -133,9 +133,7 @@
 
 .gridPadre {
   display: grid;
-  grid-template: "header header" 1000px
- "section section" auto
- "footer footer" auto; }
+  grid-template: "header header" 1000px "section section" auto "footer footer" auto; }
   .gridPadre .section {
     grid-area: section; }
   .gridPadre .footer {
@@ -333,27 +331,65 @@ div .card {
   background-color: #fbf3a1;
   color: black; }
 
-@media only screen and (max-width: 571px) {
+/*SECCION EVENTOS*/
+.eventosBackground {
+  background-image: url(../imagenes/floor-1256804.jpg); }
+
+.calendario {
+  display: flex;
+  flex-direction: column; }
+
+.seccionCalendario {
+  display: flex;
+  flex-wrap: nowrap; }
+  .seccionCalendario article {
+    width: 1000px;
+    height: auto;
+    background-color: gold; }
+
+.seccionCalendario div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end; }
+
+.seccionCalendario div div {
+  width: 150px;
+  height: 150px;
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  border: 1px solid black; }
+
+.agendaOcupada {
+  color: gold;
+  display: flex; }
+
+.agendaOcupada img {
+  width: 90px;
+  height: 90px;
+  align-self: center; }
+
+.agendaOcupada h5 {
+  text-align: center; }
+
+/*FIN DE EVENTOS*/
+@media (max-width: 571px) {
   .gridPadre {
     display: grid;
-    grid-template: "header header" 571px
-    "section section" auto
-   "footer footer" auto; }
+    grid-template: "header header" 571px "section section" auto "footer footer" auto; }
   .navDisplay li {
-    display: none;
-  }
+    display: none; }
   .navDisplay {
     justify-content: center;
-    align-content: center; 
-  }
-  .menuResponsive .iconoHam{
-    display:flex;
-  }
+    align-content: center; }
+  .menuResponsive .iconoHam {
+    display: flex; }
   .navInput {
     display: flex;
     width: 500px;
-    color: white;
- }
+    color: white; }
   .navInput:checked + .navDisplay li {
     display: grid;
     text-align: center;
@@ -364,14 +400,12 @@ div .card {
     margin: 0px 0px 0px 0px;
     border: 2px solid rgba(255, 255, 255, 0);
     background-color: rgba(0, 0, 0, 0); }
-  .menuResponsive .navDisplay{
+  .menuResponsive .navDisplay {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 50px;
     justify-content: center;
-    align-content: center;    
-  }
-  }
+    align-content: center; }
   .navDisplay li a {
     justify-self: center;
     margin-right: 0px; }
@@ -396,64 +430,52 @@ div .card {
     top: 225px; }
   .logo2 img {
     width: auto; }
-  .gridPadre .header .noticiasIndex{
-    top: 291px;
-  }
+  .gridPadre .header .noticiasIndex {
+    top: 291px; }
   .video {
     padding-top: 50px;
     height: auto;
     width: auto;
     display: flex;
     justify-content: center;
-    align-items: center; 
-  }
+    align-items: center; }
   .video video {
     height: auto;
     width: 300px;
     margin-bottom: 25px; }
-    .section .formularioVideo {
-    height: 130px; 
-    margin-bottom:1px ;}
-  .footer{
+  .section .formularioVideo {
+    height: 130px;
+    margin-bottom: 1px; }
+  .footer {
     color: #FBF4A1;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 500px;
     width: auto;
-    text-align: center; 
-  }
-  .footer .colorfooter{
+    text-align: center; }
+  .footer .colorfooter {
     justify-self: center;
     align-self: center;
-    width: auto;
-  }
+    width: auto; }
   .footer .colorfooter form {
     justify-self: center;
     align-self: center;
-    width: 308px;
-  }
-  .footer .patrocinadores div{
+    width: 308px; }
+  .footer .patrocinadores div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-  }
-  .footer .footerRedesContacto{
+    align-items: center; }
+  .footer .footerRedesContacto {
     justify-self: center;
-    align-self: center;
-  }
+    align-self: center; }
   /*TIENDA*/
-  .zonaDeCompra .filtrosCompra a{
+  .zonaDeCompra .filtrosCompra a {
     width: 88px;
-    border: 1px solid #FBF4A1;
-  }
+    border: 1px solid #FBF4A1; }
   /*FIN TIENDA*/
   /*REFERENTES*/
-
-
-
-
   .referentesOrigenes {
     display: flex;
     flex-direction: column;
@@ -468,12 +490,7 @@ div .card {
   .referentesOrigenes p {
     color: black;
     font-size: x-small; }
-  /*.gridPadreReferentes {
-    display: grid;
-    grid-template: "header header" 500px
- "sectionR sectionR" auto
- "footer footer" auto; }
-  */.sectionR h2 {
+  .sectionR h2 {
     text-align: center; }
   .musicosReferentes {
     display: flex;
@@ -547,11 +564,4 @@ div .card {
   section .col {
     width: auto;
     height: auto;
-    font-size: xx-small; } 
-    /*EVENTOS*/
-
-  .calendario{
-    display: none;
-    flex-direction: column;
-  }
-
+    font-size: xx-small; } }

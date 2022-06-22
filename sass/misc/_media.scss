@@ -1,268 +1,206 @@
-@media only screen and (max-width: 571px) {
-    .gridPadre{
-        display: grid;
-        grid-template:
-        "header header" 571px
-        "section section" auto
-        "footer footer" auto;
-    }
-    .navDisplay li{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-right: 0px;
-        padding-left: 5px;
-    }
-    .navDisplay{
+@media (max-width: 571px) {
+    .gridPadre {
+      display: grid;
+      grid-template: "header header" 571px
+      "section section" auto
+      "footer footer" auto; }
+      .navDisplay li {
         display: none;
-        justify-content: center;
-        align-content: center;
-        background-color: #091926ad;
+      }
+    .navDisplay {
+      justify-content: center;
+      align-content: center; 
     }
-    .navInput{
-        position: sticky;
-        top:40px;
-        left:300px;
-        display: none;
+    .menuResponsive .iconoHam{
+      display:flex;
     }
-    .navInput:checked + .navDisplay{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto auto;
-        text-align: center;
-        margin-right: 0px;
-        margin-top: 50px;
-        border: 1px solid rgba(255, 255, 255, 0);
-        background-color: rgba(0, 0, 0, 0);
+    .navInput {
+      display: flex;
+      width: 500px;
+      color: white;
     }
-    .navDisplay li a{
-        justify-self: center;
-        margin-right: 0px;
+    .navInput:checked + .navDisplay li {
+      display: grid;
+      text-align: center;
+      justify-items: center;
+      align-content: center;
+      height: auto;
+      padding: 0px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
+      border: 2px solid rgba(255, 255, 255, 0);
+      background-color: rgba(0, 0, 0, 0); }
+    .menuResponsive .navDisplay{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 50px;
+      justify-content: center;
+      align-content: center;    
     }
-    .menuResponsive label{
-        display: flex;
-        justify-content: end;
-        margin-top: 40px;
-        margin-right: 15px;
+    .navDisplay li a {
+      justify-self: center;
+      margin-right: 0px; }
+    .menuResponsive label {
+      display: flex;
+      justify-content: end;
+      margin-top: 40px;
+      margin-right: 15px; }
+    .gridPadre .header {
+      grid-area: header;
+      backdrop-filter: blur(1px); }
+    .gridPadre .header .background1 {
+      background-position: center;
+      background-attachment: fixed;
+      background-size: 900px;
+      height: 570px;
+      padding-top: 1px; }
+    .logo2 {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: 225px; }
+    .logo2 img {
+      width: auto; }
+    .gridPadre .header .noticiasIndex{
+      top: 291px;
     }
-    .header{
-        grid-area: header;
-        backdrop-filter: blur(1px);
+    .video {
+      padding-top: 50px;
+      height: auto;
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
     }
-    .background1{
-        background-position: center;
-        background-attachment: fixed;
-        background-size: 1200px;
-        height: 570px;
-        padding-top: 1px;
+    .video video {
+      height: auto;
+      width: 300px;
+      margin-bottom: 25px; }
+      .section .formularioVideo {
+      height: 130px; 
+      margin-bottom:1px ;}
+    .footer{
+      color: #FBF4A1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 500px;
+      width: auto;
+      text-align: center; 
     }
-    .logo2{
-        display: flex;
-        justify-content: center;
-        position:relative;
-        top: 225px;
+    .footer .colorfooter{
+      justify-self: center;
+      align-self: center;
+      width: auto;
     }
-    .logo2 img{
-        width: auto;
+    .footer .colorfooter form {
+      justify-self: center;
+      align-self: center;
+      width: 308px;
     }
-    .video{
-        padding-top: 50px;
-        height: auto;
-        width: auto;
-        display:flex;
-        justify-content: center;
-        align-items: center;
+    .footer .patrocinadores div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-    .video video{
-        height: auto;
-        width: 300px;
-        margin-bottom: 25px;
+    .footer .footerRedesContacto{
+      justify-self: center;
+      align-self: center;
     }
-    .formularioVideo{
-        width: 200px;
+    /*TIENDA*/
+    .zonaDeCompra .filtrosCompra a{
+      width: 88px;
+      border: 1px solid #FBF4A1;
     }
-    .colorfooter{
-        color:#FBF4A1;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 100px;
-        width: 320px;
-        text-align: center;
-        padding-left: 5px;
-    }
-    .colorfooter form{
-        display: flex;
-    }
-    .colorfooter form input{
-        width: 275px;
-        height: 40px;
-        background-color: black;
-        border:0;
-        text-align: center;
-    }
-    .colorfooter form button{
-        background-color:#fbf3a1;
-        border: 0;
-        color: black;
-    
-    }
-    footer{
-        background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(9,24,37,1) 50%, rgba(0,212,255,1) 100%);    display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    footer h4{
-        font-family: 'Libre Bodoni';
-        font-size: x-large;   
-        text-shadow: 3px 3px 3px black; 
-    }
-    .footerRedesContacto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: #FBF4A1;
-        width: auto;
-        margin-bottom: 5px;
-    }
-    .footerRedesContacto h4 div{
-        text-decoration: none;
-        color: black;
-    
-    }
-    .patrocinadores{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color:#FBF4A1;
-        justify-content: space-around;
-    }
-    .patrocinadores div{
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .patrocinadores div img{
-        height: 50px;
-        width: 50px;
-    }
+    /*FIN TIENDA*/
     /*REFERENTES*/
-    .referentesOrigenes{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-top: 4px solid #091926;
-        border-bottom: 4px solid #091926;
-        background-color: #fbf3a1a5;
+    .referentesOrigenes {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-top: 4px solid #091926;
+      border-bottom: 4px solid #091926;
+      background-color: #fbf3a1a5; }
+    .referentesOrigenes img {
+      height: auto;
+      width: 270px; }
+    .referentesOrigenes p {
+      color: black;
+      font-size: x-small; }
+    .sectionR h2 {
+      text-align: center; }
+    .musicosReferentes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+    .musicosReferentesCarta {
+      background-color: #091926ad;
+      border: 4px solid #fbf3a1a5;
+      height: 200px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px; }
+    .musicosReferentesCarta img {
+      height: 100px;
+      display: flex;
+      border: 1px solid white; }
+    .musicosReferentes a {
+      border: 2px solid black;
+      border-radius: 5px;
+      width: 80px;
+      text-decoration: none;
+      background-color: #fbf3a1;
+      color: black; }
+    .menuResponsive .iconoHam {
+      margin: 0px 5px 5px 0px; }
+    .filtrosCompra {
+      background-color: #091926ad;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      border: 5px solid grey;
+      max-height: 250px;
+      margin-top: 18px;
+      position: sticky;
+      top: 20px;
+      max-width: 100px; }
+    .filtrosCompra a {
+      width: 87px;
+      font-size: xx-small; }
+    .filtrosCompra .col-md-8 {
+      width: 100px;
+      font-size: xx-small; }
+    .filtrosCompra .btn-primary {
+      width: 70px;
+      background-color: black;
+      border: 2px solid gray;
+      color: #fbf3a1;
+      font-size: xx-small; }
+    .noticiasIndex {
+      display: flex;
+      justify-content: space-evenly;
+      align-content: space-between;
+      position: relative;
+      top: 362px; }
+    .noticiasIndex .bg-image {
+      width: auto;
+      height: auto;
+      background-size: 100%; }
+    .noticiasIndex .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: end; }
+    .video iframe {
+      width: auto; }
+    section .col {
+      width: auto;
+      height: auto;
+      font-size: xx-small; } 
     }
-    .referentesOrigenes img{
-        height: auto;
-        width: 270px;
-
-    }
-    .referentesOrigenes p{
-        color: black;
-        font-size: x-small;
-    }
-    .gridPadreReferentes{
-        display: grid;
-        grid-template:
-        "header header" 113px
-        "articleR articleR" auto
-        "sectionR sectionR" auto
-        "footer footer" auto;
-    }
-    .sectionR h2{
-        text-align: center;
-    }
-    .musicosReferentes{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .musicosReferentesCarta{
-        background-color: #091926ad;
-        border: 4px solid #fbf3a1a5;
-        height: 200px;
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5px;
-    }
-    .musicosReferentesCarta img{
-        height: 100px;
-        display: flex;
-        border: 1px solid white;
-    }
-    .musicosReferentes a{
-        border: 2px solid black;
-        border-radius: 5px;
-        width: 80px;
-        text-decoration: none;
-        background-color:#fbf3a1 ;
-        color: black;
-    }
-     .menuResponsive .iconoHam{
-        margin: 0px 5px 5px 0px;
-
-    }
-    .filtrosCompra{
-        background-color: #091926ad;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content:space-evenly;
-        border: 5px solid grey;
-        max-height: 250px;
-        margin-top: 18px;
-        position: sticky;
-        top: 20px;
-        max-width: 100px;
-    }
-    .filtrosCompra a{
-        width: 87px;
-        font-size: xx-small;
-    }
-    .filtrosCompra .col-md-8{
-        width: 100px;
-        font-size: xx-small;
-    }
-    .filtrosCompra .btn-primary{
-        width: 70px;
-        background-color: black;
-        border:2px solid gray;
-        color: #fbf3a1;
-        font-size: xx-small;
-    }
-    .noticiasIndex{
-        display: flex;
-        justify-content: space-evenly;
-        align-content: space-between;
-        position: relative;
-        top: 362px;
-    }
-    .noticiasIndex .bg-image{
-        width: auto;
-        height: auto;
-        background-size:100%;
-    }
-    .noticiasIndex .card-body{
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-    }
-    .video iframe{
-        width: auto;
-    }
-    section .col{
-        width: auto;
-        height: auto;
-        font-size: xx-small;
-    }
-}
