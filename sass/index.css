@@ -497,17 +497,32 @@ div .card {
   grid-column: 2/4;
   align-items: center;
   justify-items: center;
+  background-image: url("https://lapaginaimpar.files.wordpress.com/2010/12/eric_clapton_2010_1_by_johnnyslowhand.jpg");
+  max-height: 500px;
+  height: 100%;
+}
+#todosLosEventos .caja#caja2 .displayEventos {
+  display: flex;
+  background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,24,37,0.8939950980392157) 24%, rgba(0,212,255,1) 100%);";
+}
+#todosLosEventos .caja#caja2 .displayEventosColumn {
+  display: flex;
+  flex-direction: column;
 }
 #todosLosEventos .caja#caja2 img {
   max-width: 1000px;
   max-height: 1000px;
   height: auto;
   width: 800px;
-  overflow: visible;
   justify-self: center;
   align-self: center;
 }
 
+@media (min-width: 1920px) {
+  .eventosSeparador span img {
+    width: 2000px;
+  }
+}
 /*FIN DE EVENTOS*/
 @media (max-width: 571px) {
   .gridPadre {
