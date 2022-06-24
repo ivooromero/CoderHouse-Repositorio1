@@ -1,0 +1,29 @@
+.sobreNosotrosBackground{
+    background-image:url(../imagenes/anthony-torres-WAG2DyiFhnQ-unsplash.jpg);
+}
+.sobreNosotros{
+    display: flex;
+    flex-direction:column;
+}
+.sobreNosotrosPrimera{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    div{
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+        backdrop-filter: blur(10px);
+        background-color: rgba(187, 136, 69, 0.146);
+        video{
+            height: 400px;
+            width: 650px;
+            padding-right: 15px;
+            border: 0;
+        }
+    }
+}
