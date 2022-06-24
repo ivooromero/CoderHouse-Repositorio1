@@ -481,46 +481,83 @@ div .card {
   grid-template-areas: "caja1 caja2 caja3" "caja4 caja5 caja6";
   background-color: #091825;
 }
-#todosLosEventos .caja {
-  justify-self: center;
-  align-self: center;
-}
-#todosLosEventos .caja img {
-  max-width: 400px;
-}
-#todosLosEventos .caja#caja1 img {
-  max-width: 1000px;
-  max-height: 1000px;
-  width: 500px;
-}
-#todosLosEventos .caja#caja2 {
-  grid-column: 2/4;
-  align-items: center;
-  justify-items: center;
-  background-image: url("https://lapaginaimpar.files.wordpress.com/2010/12/eric_clapton_2010_1_by_johnnyslowhand.jpg");
-  max-height: 500px;
-  height: 100%;
-}
-#todosLosEventos .caja#caja2 .displayEventos {
-  display: flex;
-  background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,24,37,0.8939950980392157) 24%, rgba(0,212,255,1) 100%);";
-}
-#todosLosEventos .caja#caja2 .displayEventosColumn {
+
+div .card-img-overlay {
   display: flex;
   flex-direction: column;
+  justify-content: end;
+  color: transparent;
+  transition: 1s;
+  margin: 1px;
+  overflow: hidden;
+  font-family: "Nunito";
+  max-height: 250px;
 }
-#todosLosEventos .caja#caja2 img {
-  max-width: 1000px;
-  max-height: 1000px;
-  height: auto;
-  width: 800px;
-  justify-self: center;
-  align-self: center;
+div .card-img-overlay:hover {
+  color: white;
+  background-color: rgba(128, 128, 128, 0.445);
+}
+
+.card {
+  max-height: 200px;
+  overflow: hidden;
+}
+
+a.btn.btn-primary {
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: 1s;
+  text-shadow: 2px 2px 2px black;
+}
+a.btn.btn-primary:hover {
+  background-color: black;
+  border: 1px solid #FBF4A1;
 }
 
 @media (min-width: 1920px) {
   .eventosSeparador span img {
     width: 2000px;
+  }
+}
+@media (max-width: 571px) {
+  .eventoPrincipal {
+    flex-direction: column;
+  }
+
+  .eventoPrincipal .imagenEventoP img {
+    width: 300px;
+  }
+
+  .eventosSeparador span img {
+    display: none;
+  }
+
+  a.btn.btn-primary {
+    transition: 1s;
+    text-shadow: 2px 2px 2px black;
+    background-color: black;
+    border: 1px solid #FBF4A1;
+  }
+
+  .eventoPrincipal {
+    display: flex;
+    background-color: black;
+  }
+  .eventoPrincipal .imagenEventoP img {
+    max-width: 700px;
+  }
+  .eventoPrincipal .infoEventoP {
+    height: 300px;
+  }
+  .eventoPrincipal .infoEventoP p {
+    font-family: "Nunito";
+    display: flex;
+    justify-content: center;
+  }
+
+  #todosLosEventos {
+    display: flex;
+    flex-direction: column;
   }
 }
 /*FIN DE EVENTOS*/
