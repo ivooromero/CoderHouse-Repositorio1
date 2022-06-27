@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&family=Open+Sans:wght@300&display=swap");
@@ -549,7 +550,9 @@ a.btn.btn-primary:hover {
 }
 
 .backgroundProducto {
-  background-image: url(https://images.unsplash.com/photo-1533035350251-aa8b8e208d95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
+  background-image: url(https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
+  background-attachment: fixed;
+  background-size: 2000px;
 }
 
 .navegadorProducto {
@@ -570,10 +573,14 @@ a.btn.btn-primary:hover {
 
 .producto .carousel {
   max-width: 800px;
+  margin-left: 10px;
 }
 
 .productoCompra {
   display: flex;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
 }
 .productoCompra .productoCompraEspecificaciones {
   display: flex;
@@ -582,6 +589,7 @@ a.btn.btn-primary:hover {
   color: white;
   margin-top: -6px;
   align-items: center;
+  font-family: "Nunito";
 }
 .productoCompra .productoCompraEspecificaciones .productoCompraEspecificacionesFlex {
   display: flex;
@@ -597,9 +605,13 @@ a.btn.btn-primary:hover {
   max-width: 200px;
   justify-content: center;
 }
+.productoCompra .productoCompraEspecificaciones .productoCompraEspecificacionesFlex2 h5 {
+  font-size: xx-large;
+}
 .productoCompra .productoCompraEspecificaciones .list-group {
   max-width: 200px;
   margin-left: 15px;
+  margin-bottom: 25px;
   text-align: center;
 }
 .productoCompra .productoCompraEspecificaciones .list-group .color0 {
@@ -659,6 +671,50 @@ a.btn.btn-primary:hover {
   border: 1px solid white;
   color: #FBF4A1;
   text-shadow: 2px 2px 2px black;
+}
+
+.especificacionesProducto {
+  background-image: linear-gradient(140deg, hsl(0deg, 0%, 0%) 0%, hsl(344deg, 0%, 7%) 80%, hsl(0deg, 0%, 11%) 100%);
+  font-family: "Raleway";
+  font-weight: bold;
+}
+.especificacionesProducto .especificacionesProductoC {
+  display: flex;
+  flex-direction: column;
+}
+.especificacionesProducto .especificacionesProductoC .especificacionesProductoL {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+  border-bottom: 1px solid rgba(224, 224, 224, 0.0980392157);
+}
+.especificacionesProducto .especificacionesProductoC .especificacionesProductoL p {
+  max-width: 500px;
+  color: rgb(110, 110, 110);
+  text-align: start;
+}
+.especificacionesProducto .especificacionesProductoC .especificacionesProductoL img {
+  margin-bottom: 50px;
+}
+.especificacionesProducto .especificacionesProductoC .especificacionesProductoR {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 25px;
+  border-bottom: 1px solid rgba(224, 224, 224, 0.0980392157);
+}
+.especificacionesProducto .especificacionesProductoC .especificacionesProductoR p {
+  max-width: 500px;
+  color: rgb(110, 110, 110);
+  text-align: end;
+}
+.especificacionesProducto h4 {
+  text-align: center;
+  color: rgb(53, 53, 53);
+  background-color: black;
+  font-family: "Nunito";
 }
 
 @media (max-width: 571px) {
