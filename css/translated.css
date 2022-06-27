@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&family=Open+Sans:wght@300&display=swap");
@@ -437,6 +438,143 @@ a.btn.btn-primary {
       padding-right: 15px;
       border: 0; }
 
+.backgroundProducto {
+  background-image: url(https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
+  background-attachment: fixed;
+  background-size: 2000px; }
+
+.navegadorProducto {
+  display: flex;
+  margin-left: 15px; }
+  .navegadorProducto a {
+    text-decoration: none;
+    color: white; }
+  .navegadorProducto p {
+    color: white; }
+  .navegadorProducto .situado {
+    color: #FBF4A1;
+    font-weight: bold; }
+
+.producto .carousel {
+  max-width: 800px;
+  margin-left: 10px; }
+
+.productoCompra {
+  display: flex;
+  height: 600px;
+  align-items: center;
+  justify-content: center; }
+  .productoCompra .productoCompraEspecificaciones {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    color: white;
+    margin-top: -6px;
+    align-items: center;
+    font-family: "Nunito"; }
+    .productoCompra .productoCompraEspecificaciones .productoCompraEspecificacionesFlex {
+      display: flex;
+      flex-direction: row; }
+    .productoCompra .productoCompraEspecificaciones .productoCompraEspecificacionesFlex2 {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      font-size: small;
+      text-align: center;
+      margin-left: 20px;
+      max-width: 200px;
+      justify-content: center; }
+      .productoCompra .productoCompraEspecificaciones .productoCompraEspecificacionesFlex2 h5 {
+        font-size: xx-large; }
+    .productoCompra .productoCompraEspecificaciones .list-group {
+      max-width: 200px;
+      margin-left: 15px;
+      margin-bottom: 25px;
+      text-align: center; }
+      .productoCompra .productoCompraEspecificaciones .list-group .color0 {
+        background-image: url(https://www.fmicassets.com/Damroot/Original/10001/3-color-sunburst.png);
+        border: 1px solid transparent;
+        color: transparent;
+        transition: .5s; }
+        .productoCompra .productoCompraEspecificaciones .list-group .color0:hover {
+          border: 1px solid white;
+          color: #FBF4A1;
+          text-shadow: 2px 2px 2px black; }
+      .productoCompra .productoCompraEspecificaciones .list-group .color1 {
+        background-image: url(https://www.fmicassets.com/Damroot/Original/10001/olympic-white.png);
+        border: 1px solid transparent;
+        color: transparent;
+        transition: .5s; }
+        .productoCompra .productoCompraEspecificaciones .list-group .color1:hover {
+          border: 1px solid white;
+          color: #FBF4A1;
+          text-shadow: 2px 2px 2px black; }
+      .productoCompra .productoCompraEspecificaciones .list-group .color2 {
+        background-image: url(https://www.fmicassets.com/Damroot/Original/10001/swatch_fen_dark_night.png);
+        background-size: 200px;
+        border: 1px solid transparent;
+        color: transparent;
+        transition: .5s; }
+        .productoCompra .productoCompraEspecificaciones .list-group .color2:hover {
+          border: 1px solid white;
+          color: #FBF4A1;
+          text-shadow: 2px 2px 2px black; }
+      .productoCompra .productoCompraEspecificaciones .list-group .color3 {
+        background-image: url(https://www.fmicassets.com/Damroot/Original/10001/swatch_fen_natural_roasted_pine.png);
+        background-size: 200px;
+        border: 1px solid transparent;
+        color: transparent;
+        transition: .5s; }
+        .productoCompra .productoCompraEspecificaciones .list-group .color3:hover {
+          border: 1px solid white;
+          color: #FBF4A1;
+          text-shadow: 2px 2px 2px black; }
+      .productoCompra .productoCompraEspecificaciones .list-group .color4 {
+        background-image: url(https://www.fender.com/on/demandware.static/-/Library-Sites-Fender-Shared/default/dwe9a5d3e0/fender/products/swatches/palosanto.png);
+        background-size: 200px;
+        border: 1px solid transparent;
+        color: transparent;
+        transition: .5s; }
+        .productoCompra .productoCompraEspecificaciones .list-group .color4:hover {
+          border: 1px solid white;
+          color: #FBF4A1;
+          text-shadow: 2px 2px 2px black; }
+
+.especificacionesProducto {
+  font-family: 'Raleway';
+  font-weight: bold; }
+  .especificacionesProducto .especificacionesProductoC {
+    display: flex;
+    flex-direction: column; }
+    .especificacionesProducto .especificacionesProductoC .especificacionesProductoL {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 40px;
+      border-bottom: 1px solid #e0e0e019; }
+      .especificacionesProducto .especificacionesProductoC .especificacionesProductoL p {
+        max-width: 500px;
+        color: #6e6e6e;
+        text-align: start; }
+      .especificacionesProducto .especificacionesProductoC .especificacionesProductoL img {
+        margin-bottom: 50px; }
+    .especificacionesProducto .especificacionesProductoC .especificacionesProductoR {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 25px;
+      border-bottom: 1px solid #e0e0e019; }
+      .especificacionesProducto .especificacionesProductoC .especificacionesProductoR p {
+        max-width: 500px;
+        color: #6e6e6e;
+        text-align: end; }
+  .especificacionesProducto h4 {
+    text-align: center;
+    color: #353535;
+    background-color: black;
+    font-family: "Nunito"; }
+
 @media (max-width: 571px) {
   .gridPadre {
     display: grid;
@@ -658,7 +796,28 @@ a.btn.btn-primary {
     font-size: small; }
   .todosLosEventos {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  article.producto {
+    transform: rotate(-90deg); }
+  div .carousel-indicators.c {
+    display: none; }
+  .productoCompraEspecificaciones h4 {
+    text-align: center; }
+  .productoCompraEspecificaciones .productoCompraEspecificacionesFlex .list-group {
+    margin-top: -10px; }
+    .productoCompraEspecificaciones .productoCompraEspecificacionesFlex .list-group button {
+      height: 50px; }
+  .especificacionesProducto .especificacionesProductoC .especificacionesProductoL p {
+    text-align: center; }
+  .especificacionesProducto .especificacionesProductoC .especificacionesProductoR {
+    display: flex;
+    flex-direction: column; }
+    .especificacionesProducto .especificacionesProductoC .especificacionesProductoR iframe {
+      max-width: 400px;
+      justify-self: center;
+      align-self: center; }
+    .especificacionesProducto .especificacionesProductoC .especificacionesProductoR p {
+      text-align: center; } }
 
 @media (min-width: 1920px) {
   .eventosSeparador span img {
