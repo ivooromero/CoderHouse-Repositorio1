@@ -136,7 +136,9 @@
 
 .gridPadre {
   display: grid;
-  grid-template: "header header" 1000px "section section" auto "footer footer" auto; }
+  grid-template: "header header" 1000px
+ "section section" auto
+ "footer footer" auto; }
   .gridPadre .section {
     grid-area: section; }
   .gridPadre .footer {
@@ -380,7 +382,8 @@ div .card {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
-  grid-template-areas: "caja1 caja2 caja3" "caja4 caja5 caja6";
+  grid-template-areas: "caja1 caja2 caja3"
+ "caja4 caja5 caja6";
   background-color: #091825; }
 
 div .card-img-overlay {
@@ -541,6 +544,12 @@ a.btn.btn-primary {
           text-shadow: 2px 2px 2px black; }
 
 .especificacionesProducto {
+  background-image: linear-gradient(
+    140deg,
+    hsl(1deg 1% 1%) 1%,
+    hsl(344deg 0% 7%) 80%,
+    hsl(0deg 0% 11%) 100%
+  );
   font-family: 'Raleway';
   font-weight: bold; }
   .especificacionesProducto .especificacionesProductoC {
@@ -578,7 +587,9 @@ a.btn.btn-primary {
 @media (max-width: 571px) {
   .gridPadre {
     display: grid;
-    grid-template: "header header" 571px "section section" auto "footer footer" auto; }
+    grid-template: "header header" 571px
+ "section section" auto
+ "footer footer" auto; }
   .navDisplay li {
     display: none; }
   .navDisplay {
