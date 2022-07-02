@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&family=Open+Sans:wght@300&display=swap');
+
+@import "./misc/variables";
+@import "./misc/animaciones";
+@import"./misc/varios";
+
+@import "./partials/footer";
+@import "./partials/header";
+
+
+@import "./Views/home";
+@import "./Views/tienda";
+@import "./Views/referentes";
+@import "./Views/eventos";
+@import "./Views/sobreNosotros";
+@import "./Views/producto";
+@import "./misc/media";
+
+
+
+
+
+
+
+
+
