@@ -459,8 +459,8 @@ a.btn.btn-primary {
     backdrop-filter: blur(10px);
     background-color: rgba(187, 136, 69, 0.146); }
     .sobreNosotrosPrimera div video {
-      height: 400px;
-      width: 650px;
+      max-height: 400px;
+      max-width: 650px;
       padding-right: 15px;
       border: 0; }
 
@@ -860,7 +860,17 @@ a.btn.btn-primary {
       justify-self: center;
       align-self: center; }
     .especificacionesProducto .especificacionesProductoC .especificacionesProductoR p {
-      text-align: center; } }
+      text-align: center; }
+      .sobreNosotrosPrimera {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between; } 
+        .sobreNosotrosPrimera div video {
+          max-height: 200px;
+          max-width: 500px;
+          padding-right: 15px;
+          border: 0; }}
 
 @media (min-width: 1920px) {
   .eventosSeparador span img {
@@ -869,4 +879,4 @@ a.btn.btn-primary {
 @media (max-width: 1350px) {
   .eventosSeparador span img {
     display: none; } }
-    
+
